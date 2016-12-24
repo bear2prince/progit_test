@@ -1,3 +1,4 @@
+11111111
 Note: the original TicGit author has pulled all the TicGit-ng changes into his repository, creating a potentially confusing situation. The schacon TicGit repo, this one, is not consistently maintained. For up to date TicGit-ng info and code, check the canonical TicGit-ng repository at  
 https://github.com/jeffWelling/ticgit
 
@@ -85,9 +86,9 @@ To get a list of all commands with short description:
 
     > ti --help
     Usage: ti COMMAND [FLAGS] [ARGS]
-     
+
     Options for help command:
-     
+
     The available TicGit-ng commands are:
         recent                           List recent activities
         checkout                         Checkout a ticket
@@ -101,7 +102,7 @@ To get a list of all commands with short description:
         new                              Create a new ticket
         attach                           Attach file to ticket
         list                             List tickets
-     
+
     Common options:
         -v, --version                    Show the version number
         -h, --help                       Display this help
@@ -114,11 +115,11 @@ To get help about a specific command:
     ## for example
     > ti assign --help
     Usage: ti assign [options] [ticket_id]
-     
+
     Options for assign command:
         -c, --checkout TICKET            Checkout this ticket
         -u, --user USER                  Assign the ticket to this user
-     
+
     Common options:
         -v, --version                    Show the version number
         -h, --help                       Display this help
@@ -146,7 +147,7 @@ If you run it without arguments, it will tell you what is available to run
     Please specify at least one action to execute.
 
     Usage: ti COMMAND [FLAGS] [ARGS]
-     
+
     The available TicGit-ng commands are:
         recent                           List recent activities
         checkout                         Checkout a ticket
@@ -160,7 +161,7 @@ If you run it without arguments, it will tell you what is available to run
         new                              Create a new ticket
         attach                           Attach file to ticket
         list                             List tickets
-     
+
     Common options:
         -v, --version                    Show the version number
         -h, --help                       Display this help
@@ -180,11 +181,11 @@ To add a new ticket you can use `ti new -t 'Title of ticket'` and give it a titl
 
        TicId  Title                             State Date  Assgn    Tags                
     -----------------------------------------------------------------------------------------
-       d7f2d8 my new ticket                     open  09/06 
+       d7f2d8 my new ticket                     open  09/06
 
 For the ‘comment’ and ‘new’ commands, if you don’t specify a ‘-m’ for the message, it puts you into $EDITOR  to write it. The ‘new’ action is especially useful with this, because you can also tag it and give it an initial comment when you create it this way:
 
-    
+
     # ---
     # tags:
     # # first line will be the title of the tic, the rest will be the first comment
@@ -260,7 +261,7 @@ The `ti list` command can also be sorted and filtered.
 
     $ ti list --help
     Usage: ti list [options]
-     
+
     Options for list command:
         -l, --list                       Show the saved queries
         -S, --saveas SAVENAME            Save this list as a saved name
@@ -270,7 +271,7 @@ The `ti list` command can also be sorted and filtered.
         -t, --tags TAG[,TAG]             List only tickets with specific tag(s)
                                          Prefix the tag with '-' to negate
         -o, --order ORDER                Field to order by - one of : assigned,state,date,title
-     
+
     Common options:
         -v, --version                    Show the version number
         -h, --help                       Display this help
@@ -306,7 +307,7 @@ This will show you all of the bugs in TicGit-ng's ticgit-ng branch.
     $ ti list
 
 To submit your changes back to the upstream maintainer, push the bugs in your ticgit-ng branch to your public repo on Github
-    
+
     $ git push origin ticgit-ng
 
 Then contact the upstream maintainer by sending a Pull Request or Email and ask them to review and accept your bug changes.
@@ -402,7 +403,7 @@ More information on developing TicGit-ng and collaborating with other TicGit-ng 
 
 ### Alternatives ###
 
-ditz 
+ditz
 bugs everywhere
 git-issues
 
