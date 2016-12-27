@@ -6,3 +6,4 @@ a 1
 alice 1
 alice a 1
 alice a 2
+bob 1
