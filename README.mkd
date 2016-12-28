@@ -2,6 +2,7 @@
 2
 b1
 a 1
+bob 1
     sdf
 alice 1
 alice a 1
